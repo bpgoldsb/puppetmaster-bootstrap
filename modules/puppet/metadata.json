@@ -1,0 +1,67 @@
+{
+  "name": "stephenrjohnson-puppet",
+  "version": "0.0.21",
+  "source": "git://github.com/stephenrjohnson/puppetlabs-puppet.git",
+  "author": "Stephen Johnson",
+  "license": "Apache",
+  "summary": "Resource types for managing puppet master and agent",
+  "description": "Resource types for managing puppet master and agent",
+  "project_page": "https://github.com/stephenrjohnson/puppetlabs-puppet",
+  "dependencies": [
+    {
+      "name": "puppetlabs/inifile",
+      "version_requirement": ">= 1.0.0"
+    },
+    {
+      "name": "puppetlabs/apache",
+      "version_requirement": ">= 0.8.0"
+    },
+    {
+      "name": "puppetlabs/puppetdb",
+      "version_requirement": ">= 2.0.0"
+    }
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "CHANGELOG": "12f81a9d8a8a8c7726e1a2948cba7e28",
+    "Gemfile": "66243a760ad73b0c2edcce00d532a61f",
+    "Gemfile.lock": "5b4586fcf5948c16a66289c6361889b7",
+    "Modulefile": "d42cc01d706d3b3477dd54c724c2de8a",
+    "README.markdown": "1b869ad5741d5757b3f3e8241d6939f1",
+    "Rakefile": "3488e56f3d0c489e2e2f36ce9885236d",
+    "files/hiera.yaml": "324e9873e29c1970850f01b0f64c0269",
+    "files/routes.yaml": "5f4b6068949188776994febfea46f2aa",
+    "lib/facter/etckepper_puppet.rb": "47c74c927cf9369202ac6f5285a99d2b",
+    "manifests/agent.pp": "5d8d25af051adb78cffc781aac0d0195",
+    "manifests/master.pp": "c4ca2f0d648289f76e994e2a2d34c9ad",
+    "manifests/masterenv.pp": "449033c2aa242c1d28f8447e3318ef4e",
+    "manifests/params.pp": "ab382ca25f50291e328b0995869ccb4f",
+    "manifests/passenger.pp": "28e499f3c0f4f0356f9905b475595352",
+    "manifests/repo/puppetlabs.pp": "91988375972a071a3ae08f19b6a230fc",
+    "manifests/storeconfigs.pp": "a61db904b20603a22dfd2282115d70c1",
+    "spec/classes/puppet_agent_spec.rb": "5bcb1db03084f3a841abb31f829d8d60",
+    "spec/classes/puppet_master_spec.rb": "376ae94aa7f7b2cc79694b3a17cafd74",
+    "spec/classes/puppet_passenger_spec.rb": "e54b4ffbe072ef5e3c76d7b3a37e3e2a",
+    "spec/classes/puppet_repo_puppetlabs_spec.rb": "de607076cc0bb68841be149e9c9bf8b7",
+    "spec/classes/puppet_storeconfigs_spec.rb": "ece0490fe4e8d7e7230262eb386b8b63",
+    "spec/defines/puppet_masterenv_spec.rb": "ab5668f55aa22042838383c95803d65a",
+    "spec/spec_helper.rb": "0db89c9a486df193c0e40095422e19dc",
+    "spec/spec_helper_system.rb": "8369862da3e01bc56cbfc1ef5c9f2b7f",
+    "spec/system/agent_spec.rb": "982e3aa57d61046cc21db45dd074abe9",
+    "spec/system/master_spec.rb": "6c7d7b8863eb7266edf71ceb4fc0d47b",
+    "spec/system/repo_spec.rb": "c3d3ed6868a06e3bca9cc193122f9907",
+    "templates/apache_custom_fragment.erb": "d8bb2003c30c322cfd18afa34c87c53c",
+    "templates/config.erb": "fd349992f7e0894be3b4942c51dc54ce",
+    "templates/etc/default/puppet.erb": "06324ef05049037a41776ecc429b671a",
+    "templates/etc/sysconfig/puppet.erb": "964b742924ff3bfab405f2ae5bee52b0",
+    "templates/pgp.key": "b467e14e20dd884477bc5bb77a93d9ca",
+    "templates/puppet_passenger.conf.erb": "e2101493e721c7b11c2eeb25ea17812e",
+    "tests/agent.pp": "29e6f315cf98549a35b90b11adb8e5aa",
+    "tests/dbterminus.pp": "ba797f2bb9396ef573772e50772d342c",
+    "tests/master.pp": "29e6f315cf98549a35b90b11adb8e5aa",
+    "tests/passenger.pp": "dcba3bb39e8c6e7f87216530dcb032ce",
+    "tests/storedconfigs.pp": "0241d8e4465148c5f0940eae30474c7e"
+  }
+}
