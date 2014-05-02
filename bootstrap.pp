@@ -1,4 +1,4 @@
-$certname = ''
+$certname = 'bebr-srv-puppet-01.bebr.ufl.edu'
 
 if $certname != '' {
   validate_re($certname, '^[a-zA-Z0-9\-\.)]+$', '$certname must only contain letters, numbers, periods, hypens (-) and underscores (_)' )
@@ -11,16 +11,11 @@ class { 'puppetdb': }
 class { 'puppet::master':
     storeconfigs  => true,
     require       => Class['::epel'],
+    modulepath    => '/srv/puppet/env/$environment/modules',
+    manifest      => '/etc/puppet/env/$environment/site.pp',
 }
+class { 'r10k': }
 
 file { '/srv/puppet': ensure => directory }
-
-puppet::masterenv {'dev':
-    modulepath => '/srv/puppet/env/dev/modules',
-    manifest   => '/etc/puppet/env/dev/site.pp',
-}
-puppet::masterenv {'production':
-    modulepath => '/srv/puppet/env/production/modules',
-    manifest   => '/srv/puppet/env/production/site.pp',
-}
+file { '/srv/puppet/env': ensure => directory }
 

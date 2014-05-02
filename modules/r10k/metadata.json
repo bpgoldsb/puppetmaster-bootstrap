@@ -1,0 +1,89 @@
+{
+  "name": "zack-r10k",
+  "version": "1.0.2",
+  "source": "https://github.com/acidprime/r10k",
+  "author": "zack",
+  "license": "Apache License, Version 2.0",
+  "summary": "Dynamic environments with git & r10k",
+  "description": "Module for setting up dynamic environments using r10k",
+  "project_page": "https://github.com/acidprime/r10k",
+  "dependencies": [
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 3.2.0"
+    },
+    {
+      "name": "puppetlabs/ruby",
+      "version_requirement": ">= 0.0.2"
+    },
+    {
+      "name": "puppetlabs/gcc",
+      "version_requirement": ">= 0.0.3"
+    },
+    {
+      "name": "puppetlabs/pe_gem",
+      "version_requirement": ">= 0.0.1"
+    },
+    {
+      "name": "mhuffnagle/make",
+      "version_requirement": ">= 0.0.1"
+    },
+    {
+      "name": "puppetlabs/inifile",
+      "version_requirement": ">= 1.0.0"
+    },
+    {
+      "name": "puppetlabs/vcsrepo",
+      "version_requirement": ">= 0.1.2"
+    },
+    {
+      "name": "puppetlabs/git",
+      "version_requirement": ">= 0.0.3"
+    },
+    {
+      "name": "gentoo/portage",
+      "version_requirement": ">= 2.0.0"
+    }
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "CHANGELOG": "ba8cbbb4681c1a5e8202a5018f4532ae",
+    "Gemfile": "6f96e64cdb04aa5492e78594deb21040",
+    "Modulefile": "c698d1b3ddea68953bb9c51a2f1ff137",
+    "README.md": "96471352d2baa674ef72ca500387c9bd",
+    "Rakefile": "d8167f959ec9574ccda2a188294a6c71",
+    "files/agent/r10k.ddl": "c57b98697d9d0b7563e5a0d172a24975",
+    "files/agent/r10k.rb": "431d2d13ad39e6fa215d7dbdb2ffc9d6",
+    "files/application/r10k.rb": "c2ed5a97cd8c8af7bce2d34e2494e3a7",
+    "files/post-receive": "be75571c963ce429f77d25a91dc25875",
+    "files/pre-commit": "60f857881bdb2032cedfc644376f326f",
+    "manifests/config.pp": "4cae88981e594fcd2bd53d203d4b3c0b",
+    "manifests/init.pp": "a9e1d6079e7cc274fa74af9cc2942ce9",
+    "manifests/install/bundle.pp": "5fb62062406821073d50ccf3d9fb2114",
+    "manifests/install/gem.pp": "aeefbf602005ead51e8acb6b6206baa9",
+    "manifests/install/pe_gem.pp": "678b6fd73330e338998c4395bd19e00d",
+    "manifests/install/portage.pp": "f11ebc75f8e7fe6f65289cf42b6e3fc0",
+    "manifests/install.pp": "3d0dee14da5a1330650510c239dc6d87",
+    "manifests/mcollective/application.pp": "c97f8c1dec9e5c1bbf1fde699e6c38b7",
+    "manifests/mcollective.pp": "3818437137fe4b05a5c025da66340ea6",
+    "manifests/params.pp": "518bb42b1910ebebeee295a5826a1352",
+    "manifests/prerun_command.pp": "f09247170089a461decdefb36818835e",
+    "spec/classes/config_spec.rb": "e0d15ea68b8307b1c3dbbcdf2d14ca82",
+    "spec/classes/install/bundle_spec.rb": "07d3297436ec2445171b7dee0eec4974",
+    "spec/classes/install/gem_spec.rb": "7c22b217a2c6e1d4e4e65d475df02973",
+    "spec/classes/install/pe_gem_spec.rb": "310c50965ad4b3f13e8004a4ce72d474",
+    "spec/classes/install_spec.rb": "2e8f78a9e70e74a28046b95a62ce0001",
+    "spec/classes/mcollective/application_spec.rb": "c6c7421d5a34403cc6b78889a18ad301",
+    "spec/classes/mcollective_spec.rb": "0735f18412a523df34a6bda1c36c16a4",
+    "spec/classes/params_spec.rb": "cc9e2d7fc2909994b191ad5e47069b1c",
+    "spec/classes/prerun_command_spec.rb": "245e06ed7b012c5b2a601418391522e9",
+    "spec/classes/r10k_spec.rb": "39a8406433a03b17b89c6cb0dd9058a5",
+    "spec/spec.opts": "c407193b3d9028941ef59edd114f5968",
+    "spec/spec_helper.rb": "792eeb7aa7edafb93e2bc1d27c5e75c5",
+    "templates/etc/r10k.yaml.erb": "bbdb141479f07eb226679a7adc87740f",
+    "tests/init.pp": "93bf33ec71153878bccd96458f018d37",
+    "tests/prerun_command.pp": "00c4f07ec0e8015063e5537dd65fec7d"
+  }
+}

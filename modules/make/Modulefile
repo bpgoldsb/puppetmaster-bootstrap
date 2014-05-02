@@ -1,0 +1,8 @@
+name          'mhuffnagle-make'
+version       '0.0.2'
+source        'https://github.com/Element84/puppet-make.git'
+author        'Marc Huffnagle <marc@element84.com>'
+license       'Apache License, Version 2.0'
+summary       'Installs the make package'
+description   'Installs the make package'
+project_page  'https://github.com/Element84/puppet-make'
