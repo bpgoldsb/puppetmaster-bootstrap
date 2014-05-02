@@ -12,9 +12,27 @@ class { 'puppet::master':
     storeconfigs  => true,
     require       => Class['::epel'],
     modulepath    => '/srv/puppet/env/$environment/modules',
-    manifest      => '/etc/puppet/env/$environment/site.pp',
+    manifest      => '/srv/puppet/env/$environment/site.pp',
 }
-class { 'r10k': }
+class { 'r10k': 
+  r10k_basedir => '/srv/puppet/env',
+}
+
+class { 'hiera':
+  datadir => '/srv/puppet/',
+  manage_datadir => false,
+  hierarchy => [
+    "env/%{::environment}/hiera/%{::clientcert}",
+    "env/%{::environment}/hiera_env/%{::clientcert}",
+    "hiera/%{::clientcert}",
+    "env/%{::environment}/hiera/%{::domain}",
+    "env/%{::environment}/hiera_env/%{::domain}",
+    "hiera/%{::domain}",
+    "env/%{::environment}/hiera/common",
+    "env/%{::environment}/hiera_env/common",
+    "hiera/common",
+  ],
+}
 
 file { '/srv/puppet': ensure => directory }
 file { '/srv/puppet/env': ensure => directory }
